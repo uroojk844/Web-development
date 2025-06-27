@@ -1,0 +1,139 @@
+<!-- 
+Types of HTML elements:
+
+1. Block Element 
+    -> Take full width
+    -> Always start in new line
+
+2. Inline element
+    -> Render side by side
+    -> Take width according to its content
+
+
+Types of tag:
+1. Container: always in pair.
+    syntax:
+        <tagname>content</tagname>  // Element
+    example:
+        <button>Hannah</button>
+
+2. Empty tag: only start tag
+    syntax:
+        <tagname />
+    example:
+        <img attribute="value" />  // element
+        attributes: src, height, width
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Elements</title>
+</head>
+<body bgcolor="wheat">
+    <nav>
+        <a href="./lecture 1.html" target="browser">Lecture 1</a>
+        <a href="./lecture 2.html" >Lecture 2</a>
+    </nav>
+
+    <iframe name="browser" src="" width="100%" height="400">
+
+    </iframe>
+
+    <section>
+        <h2 align="center">Block Elements</h2>
+        
+        <div >A</div>
+        <div>B</div>
+        
+        <p>Paragraph1</p>
+        <p>Paragraph2</p>
+    </section>
+    
+    <!-- Section is use to create a section on something -->
+    <section>  
+        <h2 align="center">Inline Elements</h2>
+        <img src="https://picsum.photos/60.webp" width="60" height="60" alt="This is a video of beach." />
+        <img src="https://picsum.photos/60.webp" width="60" height="60" alt="" />
+        <input type="text" placeholder="Enter roll number" value="63278" disabled />
+        <input type="text">
+        <a href="">Google</a>
+        <button>Button</button>
+        <p>This a <span style="color:red;background-color: white;">red color</span> text.</p>
+    </section>
+
+    <h2>Advance topic</h2>
+
+<!-- Type:
+    Indicates the numbering type:
+    'a' indicates lowercase letters,
+    'A' indicates uppercase letters,
+    'i' indicates lowercase Roman numerals,
+    'I' indicates uppercase Roman numerals,
+    and '1' indicates numbers (default).
+
+    Start:
+    start is always represented as a number. To start numbering elements from the letter "C", use <ol start="3">
+ -->
+    <ol start="4" type="i">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Orange</li>
+    </ol>
+    
+    <ul type="circle">  <!-- disc | circle | square -->
+        <li title="kha jao">Apple</li>
+        <li>Banana</li>
+        <li>Orange</li>
+    </ul>
+
+    <!-- title attribute is use to provide tooltip for eny element  -->
+    <select title="Select quantity">
+        <option value="" disabled >SELECT</option>
+        <option value="">1</option>
+        <option value="">2</option>
+        <option value="" selected>3</option>
+        <option value="">4</option>
+    </select>
+
+    <video src="1321208-sd_640_360_30fps.mp4" width="400" controls></video>
+    <audio src="" controls></audio>
+
+    <footer>dakldasfjas</footer>
+
+    <section>jdskf</section>
+
+    <!-- Semantic tag: tag which represents its functionality by its name -->
+    <aside>
+        <a href="">Home</a>
+        <a href="">About</a>
+    </aside>
+
+    <address>lucknow</address>
+
+    <!-- Represents main content of website other than navigation, aside or footer -->
+    <main>djfhkjsh fjkhsdjfk hsj</main>
+
+    <h3>Text styling</h3>
+
+    <b>Bold text</b>
+    <strong>Strong tag</strong>
+    
+    <em>Bold text</em>
+    <i>italic</i>
+
+    <del>buy food</del>
+
+    <u>djkshfsdh</u>    
+
+    <s>dsjfksdj</s>
+
+    <br>
+    a<sup>2</sup>+b<sup>2</sup>
+    <br>
+
+    H<sub>2</sub>O
+</body>
+</html>
