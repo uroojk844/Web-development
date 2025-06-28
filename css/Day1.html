@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* style tag for css (internal css) */
+      /* CSS - Cascading Style Sheet */
+      /* 
+            CSS Selectors -> 
+            Tagname
+        */
+
+      button {
+        /* Padding: for space inside the element
+                syntax:
+                margin/padding: value;  // all side same value
+                margin/padding: value1 value2;  // top-bottom left-right 
+                margin/padding: value1 value2 value3 value4;  // top right bottom left
+        */
+        border: 0;
+        border-radius: 4px;
+        padding: 8px 16px;
+        color: white;
+        background-color: seagreen;
+        cursor: pointer;
+        /* Margin: create space around element */
+        margin-bottom: 8px;
+        /* for smoother animation/transition */
+        transition: 300ms linear;
+      }
+
+      button:hover {
+        background-color: teal;
+        /* 
+            box-shadow: x y blur spread color;
+        */
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+      }
+
+      /* #id -> id selector */
+      #btn2 {
+        background-color: purple;
+      }
+
+      #btn2:hover {
+        box-shadow: 0 0 4px 2px rgba(214, 12, 160, 0.5);
+      }
+
+      .border {
+        border: 2px solid #ccc;
+      }
+
+      /* . class selector */
+      .box {
+        width: 400px;
+        height: 100px;
+        background-color: wheat;
+        margin-bottom: 8px;
+        padding: 8px;
+      }
+
+      .box p {
+        font-size: 15px;
+      }
+
+      .card_container {
+        /* flex for flexible child elements */
+        display: flex;
+        gap: 8px;
+        height: 100px;
+        padding: 8px;
+      }
+
+      .card {
+        flex: 1;
+        background-color: beige;
+      }
+
+      .card1 {
+        flex: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box border">
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Exercitationem, consequatur modi! Exercitationem voluptate vero commodi
+        magnam eius aliquid eos aspernatur, iste officiis dolorum repudiandae
+        quae officia nam facere corporis quasi.
+      </p>
+    </div>
+
+    <button class="border">Button 1</button>
+    <button id="btn2" class="border">Button 2</button>
+    <button class="border">Button 3</button>
+
+    <section class="card_container border">
+      <div class="card card1"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+    </section>
+  </body>
+</html>
