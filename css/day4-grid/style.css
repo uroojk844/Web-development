@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: rgb(55, 55, 154);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.3);
+    min-height: 100vh;
+    padding: 24px;
+    
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+
+    display: grid;
+    place-items: center;
+
+    form {
+        max-width: 768px;
+        width: 100%;
+        background-color: white;
+        padding: 36px;
+        border-radius: 5px;
+
+        display: grid;
+        gap: 16px;
+    }
+
+    form .footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .full {
+        grid-column: 1/-1;
+    }
+
+    @media screen and (width>600px) {
+        form {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+.form-group {
+    display: grid;
+    gap: 4px;
+
+    label {
+        font-size: 14px;
+    }
+
+    input {
+        padding: 8px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+    }
+}
+
+button {
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    background-color: var(--blue);
+    color: white;
+    cursor: pointer;
+
+    &.outlined {
+        background-color: transparent;
+        color: var(--blue);
+        border: 1px solid var(--blue);
+    }
+    
+    &.outlined:hover {
+        background-color: rgba(55, 55, 154, 0.162);
+    }
+    
+    &:not(:disabled):hover {
+        filter: brightness(120%);
+    }
+
+    &:disabled {
+        background-color: #ddd;
+        font-weight: bold;
+        color: gray;
+        cursor: not-allowed;
+    }
+}
+
+.notice {
+    background-color: #d3e1fc;
+    color: var(--blue);
+    padding: 12px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    
+    .close{
+        margin-left: auto;
+
+        &:hover {
+            background-color: #b3d3fd;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    }
+}
