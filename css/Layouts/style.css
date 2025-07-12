@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    padding: 16px;
+    display: grid;
+    gap: 16px;
+    grid-template-rows: 60px min-content 100px auto min-content;
+}
+
+.logo, nav, header, aside, section, footer{
+    background-color: #c0c0c0;
+    padding: 16px;    
+    display: grid;
+    place-items: center;
+}
+
+.logo{
+    justify-content: start;
+}
+
+main {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 250px auto;
+}
