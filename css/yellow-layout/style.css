@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4c54f;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    padding-inline: 40px;
+}
+
+section{
+    background-color: white;
+    padding: 48px;
+    max-width: 1024px;
+    width: 100%;
+    height: 85%;
+    display: grid;
+    gap: 24px 36px;
+}
+
+.centered{
+    display: grid;
+    place-items: center;
+}
+
+header{
+    background-color: gray;
+}
+
+main,aside {
+    background-color: #c0c0c0;
+}
+
+/* Greater than mobile e.g. Tab, laptop, etc */
+@media screen and (width > 600px) {
+    section {
+        grid-template-columns: auto 250px;
+    }
+
+    aside {
+        grid-column-start: 2;
+        grid-row: 1/3;
+    }
+}
