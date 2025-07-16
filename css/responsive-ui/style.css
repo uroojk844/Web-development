@@ -115,7 +115,7 @@ footer {
   border-radius: 24px;
 }
 
-@media screen and (width < 1200px) {
+@media screen and (width < 1024px) {
   .container {
     grid-template-areas:
       "b h"
