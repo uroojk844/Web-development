@@ -1,0 +1,164 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 24px;
+  display: grid;
+  grid-template-rows: min-content auto;
+  min-height: 100vh;
+  gap: 16px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+
+  .title {
+    width: 300px;
+    height: 50px;
+    border-radius: 6px;
+    background-color: #505050;
+  }
+}
+
+.btns {
+  display: flex;
+  gap: 16px;
+
+  button {
+    background-color: #f6cad3;
+    width: 100px;
+    height: 30px;
+    border: 0;
+    border-radius: 4px;
+  }
+}
+
+.container {
+  display: grid;
+  gap: 16px;
+  grid-template-areas:
+    "a b"
+    "a h"
+    "a l"
+    "a f";
+  grid-template-columns: 300px auto;
+  grid-template-rows: 150px auto 40px max-content;
+}
+
+aside {
+  background-color: #c0c0c0;
+  border-radius: 6px;
+  grid-area: a;
+}
+
+.hannah,
+.bewakoof {
+  background-color: #f6cad3;
+  border-radius: 6px;
+}
+
+.hannah {
+  grid-area: h;
+}
+
+.bewakoof {
+  background-color: #b0b0b0;
+  grid-area: b;
+}
+
+.links {
+  display: flex;
+  gap: 8px;
+  grid-area: l;
+}
+
+.showall,
+.category {
+  background-color: #f6cad3;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+}
+
+.showall {
+  width: 80px;
+  margin-left: auto;
+}
+
+footer {
+  display: grid;
+  gap: 16px;
+  grid-area: f;
+}
+
+.footer-group {
+  display: flex;
+  gap: 16px;
+  height: 40px;
+}
+
+.small {
+  flex: 1;
+}
+
+.large {
+  flex: 2;
+}
+
+.small,
+.large {
+  background-color: #505050;
+  border-radius: 24px;
+}
+
+@media screen and (width < 1200px) {
+  .container {
+    grid-template-areas:
+      "b h"
+      "a h"
+      "a f"
+      "a f"
+      "a f";
+    grid-template-rows: 150px 100px auto;
+  }
+
+  footer{
+    align-self: start;
+  }
+
+  .links, .category {
+    display: none;
+  }
+}
+
+
+@media screen and (width < 600px) {
+    .btns button {
+        width: 40px;
+    }
+
+    .btns .one {
+        display: none;
+    }
+    
+    .container {
+        grid-template-areas: 
+        'b'
+        'h'
+        'h'
+        'f';
+        grid-template-columns: auto;
+    }
+    
+    footer .category{
+        display: block;
+    }
+
+    aside,.small{
+        display: none;
+    }
+}
